@@ -5,7 +5,7 @@ from draews.models import MeaningList
 drae = drae()
 
 # Finding the meaning of a word
-meaning_list: MeaningList = drae.find_word("sustantivo p")
+meaning_list: MeaningList = drae.find_word("sustantivo")
 
 # Obtaining the meaning on dictionary format
 meaning_dict = meaning_list.model_dump()
