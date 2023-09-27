@@ -26,11 +26,13 @@ class DRAEws:
         soup = BeautifulSoup(content, "html.parser")
         results = soup.find(id="resultados")
         article = results.article
-        meanings = article.find_all("p", "j")
-        for meaning in meanings:
-            meaning_model = self._get_meaning_model(meaning)
-            self.list_meanings.append(meaning_model)
+        if article:
+            meanings = article.find_all("p", "j")
+            for meaning in meanings:
+                meaning_model = self._get_meaning_model(meaning)
+                self.list_meanings.append(meaning_model)
         return MeaningList(meanings=self.list_meanings.copy())
+
         
     def _get_meaning_model(self, html_content: BeautifulSoup):
         word_class, use_frequency = self._handle_abbrs(html_content)        
