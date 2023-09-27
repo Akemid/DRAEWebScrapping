@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "draewebscrapping"
+name = "draews"
 version = "0.1.0"
 description = "A library to find words from the web page of Real Academia Española"
 authors = ["Sergio Mondragon"]
