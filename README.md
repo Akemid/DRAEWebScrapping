@@ -4,6 +4,11 @@ A proyect to find words from the web page of Real Academia Española
 [![Downloads](https://static.pepy.tech/badge/draews)](https://pepy.tech/project/draews)
 [![Downloads](https://static.pepy.tech/badge/draews/month)](https://pepy.tech/project/draews)
 [![Downloads](https://static.pepy.tech/badge/draews/week)](https://pepy.tech/project/draews)
+
+# Installation
+
+` pip install draews `
+
 # Usage
 A simple example to find a word
 
